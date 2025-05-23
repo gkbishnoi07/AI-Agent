@@ -8,59 +8,72 @@ This project uses environment variables to securely manage your API keys.
 
 1. Copy the example environment file to create your own `.env` file:
 
-```bash
-cp .env.example .env
+    ```bash
+    cp .env.example .env
+    ```
 
+2. Open the `.env` file in a text editor.
 
-Open the .env file in a text editor.
+3. Replace the placeholder with your actual OpenAI API key:
 
-Replace the placeholder with your actual OpenAI API key:
+    ```env
+    OPENAI_API_KEY=your_api_key_here
+    ```
 
-ini
-Copy
-Edit
-OPENAI_API_KEY=your_api_key_here
-Example:
+    Example:
 
-ini
-Copy
-Edit
-OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-Save the .env file.
+    ```env
+    OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+    ```
 
-Installation & Running
+4. Save the `.env` file.
+
+---
+
+## Installation & Running
+
 Follow these steps to fork, clone, install dependencies, and run the project:
 
-Fork this repository on GitHub.
+1. **Fork** this repository on GitHub.
 
-Clone your fork locally:
+2. **Clone** your fork locally:
 
-bash
-Copy
-Edit
-git clone https://github.com/your-username/Ai-agent.git
-cd Ai-agent
-Install UV (a task runner):
+    ```bash
+    git clone https://github.com/your-username/Ai-agent.git
+    cd Ai-agent
+    ```
 
-bash
-Copy
-Edit
-curl -LsSf https://astral.sh/uv/install.sh | sh
-Initialize UV in the project directory:
+3. **Install** UV (a task runner):
 
-bash
-Copy
-Edit
-uv init .
-Add required packages:
+    ```bash
+    curl -LsSf https://astral.sh/uv/install.sh | sh
+    ```
 
-bash
-Copy
-Edit
-uv add langgraph langchain python-dotenv langchain-openai
-Run the main script:
+4. **Initialize** UV in the project directory:
 
-bash
-Copy
-Edit
-uv run main.py
+    ```bash
+    uv init .
+    ```
+
+5. **Add** required packages:
+
+    ```bash
+    uv add langgraph langchain python-dotenv langchain-openai
+    ```
+
+6. **Run** the main script:
+
+    ```bash
+    uv run main.py
+    ```
+
+---
+
+## Usage
+
+- After running, type your messages to interact with the AI agent.
+- To exit, type `exit`.
+
+---
+
+**Keep your API key private and never share it publicly.**
